@@ -6,13 +6,13 @@ WORD_LIST: list[str] = ["aurora", "boreal", "lobo", "luna", "jabali", "cabra", "
 
 
 def ask_play_again() -> None:
-    play_again = input("¿Quieres jugar otra vez? (s/n): ").lower()
-    if play_again == "s":
+    play_again = input("¿Quieres jugar otra vez? (y/n): ").lower()
+    if play_again == "y":
         play()
     elif play_again == "n":
         print("¡Gracias por jugar!")
     else:
-        print("Opción inválida. Por favor, introduce 's' o 'n'.")
+        print("Opción inválida. Por favor, introduce 'y' o 'n'.")
         ask_play_again()
 
 
